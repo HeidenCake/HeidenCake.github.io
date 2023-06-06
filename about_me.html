@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <!--box icon link-->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <!--remix icon link-->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+    <title>Jonathan's About Me Page</title>
+    <link rel="stylesheet" href="about_me.css">
+</head>
+<body>
+    <div class = "blog-stuff">
+        <!---blog post start-->
+        <div class="blog-post">
+            <h2 class="blog-title" onclick="toggleContent('blog1')">First Blog! June 3rd, 2023 (Click on me)</h2>
+            <div id="blog1" class="blog-content">
+                <p>
+                    <span class = "paragraph">Hello! It has always been my goal to create a about me page where I can showcase myself and let others get to know a bit more about my personality. The page is still really rough with a lot of improvements needed but I am currently pretty satisfied with it!</span>
+                    <span class = "paragraph">While working on this project, thanks to chatgpt doing like 80% of my work, I got to explore more frontend, which is not something I do often (never touched anything GUI related since grade 12 LOL) I learned a lot about css and its framework and it was pretty satisfying to see everything turn out the way I visualized it. I also gained a deeper understanding of html and javascript and hoping to do more in the future when jonhungGPT comes online which will allow me to combine what I have learned with langchain and openAI.</span>
+                    <span class = "paragraph">Overazll, this isn't something too formal as this is my hobby and I had a lot of fun doing it, I was able to express my creativity and likings without much restrictions :D Anyways, there's still a lot to improvement on but this is a good start and seeing this motivates me to keep on working hard! Keep an eye out on my next blog post!</span>
+                </p>
+            </div>
+        </div>
+    </div>
+    <!--blog post end-->
+    <!--- Where all the header is-->
+    <header>
+        <a href="#" class = 'logo'>Hello!</a>
+
+        <ul class = "navlist">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about_me.html">About Me</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact_me.html">Contact Me</a></li>
+            <li><a href="jonhungGPT.html">jonhungGPT</a></li>
+        </ul>
+        <div class = "bx bx-menu" id="menu-icon"></div>
+
+    </header>
+
+    <section class = "about-me-page">
+        <div class = "about-me-page-text">
+            <p1>More about me :D I am from Taiwan and came to Canada when I was in grade 7. I am fluent in both English and Mandarin and taking a Korean course right now so that I can understand kpop lyrics and kdrama with subtitles :DD</p1>
+            <p2>I am a huge sports guy, I play all kinds of sports as long as you can name it. My favourite ones are baseball, tennis, basketball, badminton and golf.</p2>
+        </div>
+    </section>
+
+    </div class = "scroll-down">
+        <a href="#"><i class="ri-arrow-down-s-fill"></i></a>
+    
+    <div>
+
+    </div>
+    <!---scroll reveal effect-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!---custom javascript link I have no clue why we need this :)-->
+    <script src = "script.js"></script>
+    <script>
+        function toggleContent(id) {
+          var content = document.getElementById(id);
+          content.style.display = (content.style.display === 'none') ? 'block' : 'none';
+        }
+    </script>
+    <!---image slider start-->
+    <div class = "slider">
+        <div class = "slides">
+            <!--ratio buttons start-->
+            <input type="radio" name = "ratio-btn" id = "radio1">
+            <input type="radio" name = "ratio-btn" id = "radio2">
+            <input type="radio" name = "ratio-btn" id = "radio3">
+            <input type="radio" name = "ratio-btn" id = "radio4">
+            <input type="radio" name = "ratio-btn" id = "radio5">
+            <!--ratio buttons end--->
+            <!--slide image start-->
+            <div class = "slide first">
+                <img src="./images/best-friend.jpg" alt="">
+            </div>
+            <div class = "slide">
+                <img src="./images/rc-friends.jpg" alt="">
+            </div>
+            <div class = "slide">
+                <img src="./images/athlete-of-the-year.jpg" alt="">
+            </div>
+            <div class = "slide">
+                <img src="./images/golf.png" alt="">
+            </div>
+            <div class = "slide">
+                <img src="./images/rcas-friends.jpg" alt="">
+            </div>
+            <!--slide image end-->
+
+            <!--automatic navigation start-->
+            <div class = "navigation-auto">
+                <div class = "auto-btn1"></div>
+                <div class = "auto-btn2"></div>
+                <div class = "auto-btn3"></div>
+                <div class = "auto-btn4"></div>
+                <div class = "auto-btn5"></div>
+            </div>
+            <!--automatic navigation start-->
+        </div>
+        <!---manual navigation start-->
+        <div class = "navigation-manual">
+            <label for="radio1" class = "manual-btn"></label>
+            <label for="radio2" class = "manual-btn"></label>
+            <label for="radio3" class = "manual-btn"></label>
+            <label for="radio4" class = "manual-btn"></label>
+            <label for="radio5" class = "manual-btn"></label>
+        </div>
+
+        <!--manual navigation end-->
+         
+    </div>
+    <!---image slider end-->
+    <script type = "text/javascript">
+        var counter = 1; 
+        setInterval(function(){
+            document.getElementById('radio' + counter).checked = true; 
+            counter++; 
+            if(counter > 5){
+                counter = 1;
+            }
+        }, 3500); 
+    </script>
+
+</body>
+</html>
