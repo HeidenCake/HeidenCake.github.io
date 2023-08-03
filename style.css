@@ -293,6 +293,10 @@ section{
     }
 }
 
+@media (max-width: 1284px){
+
+}
+
 @media (max-width: 1195px){
     section{
         padding: 0 3%; 
