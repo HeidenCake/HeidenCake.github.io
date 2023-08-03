@@ -2,7 +2,7 @@ body{
     margin: 0; 
     padding: 0; 
     height: 100vh; 
-    display: flex; 
+    display:block; 
     justify-content: left; 
     align-items: center; 
     background: rgb(76, 57, 107);
@@ -48,15 +48,14 @@ body{
     transform: translate(-110%, -3%);
     justify-content: left;
     max-width: 800px; 
-    width: 100%; 
-    height: auto; 
+    width: 100%;  
     border-radius: 10px; 
     overflow: hidden;
 }
 
 .slides{
-    width: 500%; 
-    height: 500px; 
+    width: 550%; 
+    height: 300%; 
     display: flex; 
     justify-content: left; 
     transform: translateX(0%);
@@ -170,21 +169,22 @@ body{
 
 .about-me-page{
     transform: translate(85%, -3%);
-    height: 100%; 
-    width: 100%; 
-    margin-bottom: 18px;
-    min-height: 100vh; 
-    position:relative; 
-    display: grid;
+    height: 20px; 
+    width: 1000px;    
+    display:block;
     align-items: center;
     gap: 2rem;
+
+}
+.about-me-page-text{
+    max-width: 800px; 
+    display: block;
 }
 
 .about-me-page-text p1{
     color: white; 
     font-size: 20px; 
     line-height: 1.9;
-    margin-bottom: 20px; 
 }
 
 .about-me-page-text p2{
@@ -224,7 +224,7 @@ body{
         transition: .2s; 
     }
     .about-me-page-text{
-        padding-top: 115px; 
+        padding-top: 0px; 
 
     }
     .about-me-page{
@@ -235,47 +235,45 @@ body{
 
 }
 
+@media (max-width: 844px){
+    section{
+        padding: 0 3%; 
+        transition: .2s; 
+    }
+    .about-me-page{
+        height: auto; 
+        width: 100%;
+        padding-bottom: 10px; 
+        transform: translate(0%,159%); 
+      
+    }
+    .slider{
+        background-color: blue; 
+        height: 80%; 
+        width: 70%; 
+        padding-bottom: 0;
+        justify-content: center; 
+        transform: translate(25%,-60%);
+    }
+    .about-me-page-text p1{
+        color: white; 
+        font-size: 18px; 
+        line-height: 1.9;
+    }
+    
+    .about-me-page-text p2{
+        color: white; 
+        font-size: 18px; 
+        line-height: 1.9;
+    }
+
+}
+
 @media (max-width: 680px){
     .about-me-page-text{
         width: 100%; 
         height: auto;
     }
-}
-
-.blog-title{
-    top: 40px; 
-    right: -65px; 
-    position: absolute;
-    cursor: pointer;
-    color: white;
-    font-weight: bold;
-    font-size: 25px;
-    width: 100%; 
-    margin-bottom: 10px;
-
-}
-
-.blog-content{
-    display: none; 
-    margin-bottom: 20px; 
-    position: absolute; 
-    top: 100px; 
-    left: 60px; 
-    font-weight: bold; 
-    font-size: 15px; 
-    color: white; 
-
-}
-
-.blog-stuff{
-    background: rgb(87, 30, 141);
-    position:absolute;
-    bottom: -350px;
-    left: 2px;
-    width: 1520px; 
-    height: 400px;
-    margin-bottom: 20px;
-
 }
 
 .paragraph{
