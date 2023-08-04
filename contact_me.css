@@ -80,7 +80,6 @@ header{
     z-index: 10001; 
     cursor: pointer; 
     display: none;
-    transform: translateX(-220%);
 
 }
 
@@ -361,7 +360,6 @@ section{
         position: absolute; 
         top: 100%; 
         right: -100%; 
-        transform: translateX(-80%);
         width: 100px; 
         height: 18vh;
         display: flex; 
