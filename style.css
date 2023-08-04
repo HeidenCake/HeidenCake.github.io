@@ -228,7 +228,7 @@ section{
 .icons i{
     display: block; 
     margin: 26px 0; 
-    font-size: 24px; 
+    font-size: 30px; 
     color: white; 
     transition: all .50s ease; 
 }
@@ -335,13 +335,13 @@ section{
         position: absolute; 
         top: 100%; 
         right: -100%; 
-        width: 250px; 
-        height: 35vh;
-        background: #954dbe;
+        width: 100px; 
+        height: 18vh;
         display: flex; 
         align-items: center; 
+        background: #954dbe;
         flex-direction: column; 
-        padding: 50px 20px; 
+        padding: 10px 10px; 
         transition: all .55s ease; 
     }
     .navlist a{
@@ -354,6 +354,45 @@ section{
     }
 }
 
+@media (max-width: 844px){
+    .home-page-intro h1{
+        transform: translate(3%,-220%); 
+    }
+    .home-page-intro h4{
+        transform: translate(3%, -380%);
+    }
+    .home-page-intro p{
+        transform: translate(3%, -170%);
+    }
+    .home-page-image{
+        transform: translate(1%,7%);
+    }
+    .contact-me-icons{
+        display: flex;
+        height: 150px; 
+        width: 390px;
+        top: 60%; 
+        font-size: 30px;
+        transform: translateY(-30%);
+        justify-content: left; 
+        align-items: center;
+    }
+
+    .contact-me-icons i{
+        display: block; 
+        font-size: 9rem; 
+        margin: 0 20px;
+        color: white; 
+        transform: translateX(-80%);
+        transition: all .50s ease; 
+
+    }
+    .contact-me-text{
+        transform: translateY(17%);
+
+    }
+
+}
 @media (max-width: 680px){
     .home-page-image img{
         width: 100%; 

@@ -199,8 +199,47 @@ body{
 @media (max-width: 1535px){
     header{
         padding: 15px 3%; 
-        transition: .2s; 
+        transition: .2s;
     }
+    
+    section{
+        transition: .5s;
+    }
+    .about-me-page{
+        height: auto; 
+        width: 100%;
+        padding-bottom: 10px; 
+        transform: translate(30%,230%); 
+      
+    }
+    .slider{
+        background-color: blue; 
+        height: 70%; 
+        width: 30%; 
+        padding-bottom: 0;
+        justify-content: center; 
+        transform: translate(25%,-5%);
+    }
+    .about-me-page-text p1{
+        color: white; 
+        font-size: 18px; 
+        line-height: 1.9;
+    }
+    
+    .about-me-page-text p2{
+        color: white; 
+        font-size: 18px; 
+        line-height: 1.9;
+    }
+
+}
+
+@media (max-width: 680px){
+    .about-me-page-text{
+        width: 100%; 
+        height: auto;
+    }
+
 
 }
 
@@ -244,7 +283,7 @@ body{
         height: auto; 
         width: 100%;
         padding-bottom: 10px; 
-        transform: translate(0%,159%); 
+        transform: translate(1%,170%); 
       
     }
     .slider{
@@ -253,7 +292,7 @@ body{
         width: 70%; 
         padding-bottom: 0;
         justify-content: center; 
-        transform: translate(25%,-60%);
+        transform: translate(25%,-55%);
     }
     .about-me-page-text p1{
         color: white; 
